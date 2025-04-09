@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Montserrat", sans-serif;
+}
+
+input,select{
+    outline: none;
+    border: none;
+}
+
+.px-5{
+    padding-left:1.25rem ;
+    padding-right: 1.25rem;
+}
+
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0F1111;
+    color: white;
+    height: 5rem;
+    align-items: center;
+}
+
+.header-div-hover{
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    transition: 200ms;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.header-div-hover:hover{
+    border: 1px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.lable-heading p{
+    font-size:0.75rem;
+    color: rgb(219, 219, 219);
+    font-weight: 500;
+}
+
+.lable-heading h4{
+    font-size: 1rem;
+    font-weight:600;
+}
+.main-header .del-sec{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    
+}
+
+
+.main-header .del-sec i{
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+.main-header .search-sec{
+    display: flex;
+    height: 3rem;
+    width: 600px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.main-header .search-sec input{
+   width: 100%;
+   padding: 0 0.25rem;
+   font-size: 1rem;
+   font-weight: 500;
+   color: rgb(46, 46, 46);
+}
+
+.main-header .search-sec input:focus{
+    border: 1px solid red;
+}
+
+.main-header .search-sec select{
+    background-color: rgb(210, 210, 210);
+    padding: 0.25rem;
+}
+
+.main-header .search-sec button{
+    border: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    background-color: rgb(255, 196, 0);
+}
+
+.main-header .search-sec button i{
+    font-size: 1.25rem;
+}
+
+.main-header .lang-sec{
+    display: flex;
+    gap: 0.25rem;
+}
+
+.main-header .cart-sec{
+    display: flex;
+    align-items: end;
+}
+
+.main-header .cart-sec i{
+    font-size: 2.5rem;
+}
