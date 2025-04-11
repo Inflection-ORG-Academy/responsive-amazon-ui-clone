@@ -5,6 +5,10 @@
      font-family: "Montserrat", sans-serif;
 }
 
+body{
+    background-color: #c7c7c7;
+}
+
 a{
     color: inherit;
     text-decoration: none;
@@ -160,7 +164,7 @@ input,select{
 @media screen and (max-width:600px) {
 
     .logo{
-        width: 100px;
+        width: 60px;
     }
 
     .main-header .del-sec{
@@ -185,3 +189,72 @@ input,select{
     font-size: 0.85rem;
     font-weight: 500;
 }
+
+/* Carousel Sec */
+
+.carousel-sec{
+    background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/img21/MA2025/GW/BAU/Unrec/PC/934044814._CB551384116_.jpg");
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-sec >div{
+    padding-bottom: 2rem;
+    background-image: linear-gradient(transparent,rgb(168, 168, 168));
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 0px 1.5rem;
+}
+
+.cards-container > div{
+    background-color: white;
+    padding: 1rem 1.25rem;
+}
+
+.cards-container > div >div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.25rem;
+    margin: 1rem 0;
+}
+
+.cards-container > div >div img{
+    height:150px;
+    width: 100%;
+    object-fit: contain;
+}
+.cards-container > div >div p{
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.cards-container > div a{
+   font-size: 0.825rem;
+   color: rgb(0, 103, 163);
+   font-weight: 500;
+ }
+.cards-container > div a:hover{
+   color: rgb(163, 54, 0);
+   cursor: pointer;
+ }
+
+ /* Tablet Device */
+
+ @media screen and (max-width:1080px) {
+    .cards-container{
+        grid-template-columns: repeat(2, 1fr);
+    }    
+ }
+
+ @media screen and (max-width:600px) {
+    .cards-container{
+        grid-template-columns: repeat(1, 1fr);
+    }    
+ }
